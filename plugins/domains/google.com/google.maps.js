@@ -45,7 +45,7 @@ module.exports = {
     provides: 'gmap',
 
     mixins: [
-        "*",
+        // "*",
     ],
 
     getMeta: function(gmap) {
