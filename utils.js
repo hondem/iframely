@@ -2,6 +2,9 @@
 
     global.CONFIG = require('./config');
 
+    console.log("ENV.YOUTUBE_API_KEY:", process.env.YOUTUBE_API_KEY)
+    console.log("ENV.GOOGLE_API_KEY:", process.env.GOOGLE_API_KEY)
+
     var async = require('async');
     var cache = require('./lib/cache');
     var ejs = require('ejs');

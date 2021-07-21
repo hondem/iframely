@@ -23,6 +23,8 @@ module.exports = {
 
         var api_key = options.getProviderOptions('youtube.api_key');
 
+        console.log("USED API KEY:", api_key)
+
         if (!api_key) {
             return cb (new Error ("No youtube.api_key configured"));
         }
