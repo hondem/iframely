@@ -23,8 +23,6 @@ run:
 		--hostname=${CONTAINER} \
 		--name=${CONTAINER} \
 		-e NODE_TLS_REJECT_UNAUTHORIZED=0 \
-		-e YOUTUBE_API_KEY=AIzaSyDCvCth7O3CodhWm4RA7AnoTej9jtuQuDU \
-		-e GOOGLE_API_KEY=AIzaSyDCvCth7O3CodhWm4RA7AnoTej9jtuQuDU \
 		-p ${PUBLISHPORT}:${EXPOSEPORT} \
 		-v $(PWD)/config.local.js:/iframely/config.local.js \
 		$(CONTAINER)
